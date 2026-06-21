@@ -3,7 +3,7 @@
 	"packages": {
 		".": {
 			"release-type": "node",
-			"package-name": "commitguard",
+			"package-name": "@moulibheemaneti/commitguard",
 			"include-component-in-tag": true,
 			"changelog-path": "CHANGELOG.md",
 			"changelog-sections": [
