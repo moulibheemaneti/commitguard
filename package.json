@@ -1,0 +1,47 @@
+{
+	"name": "commitguard",
+	"version": "0.1.0",
+	"description": "A CLI tool to manage Git hooks (pre-commit, commit-msg, pre-push) in any Node.js / JS / TS project. Similar to husky and lefthook.",
+	"module": "./dist/index.js",
+	"type": "module",
+	"bin": {
+		"commitguard": "./dist/cli.js"
+	},
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"import": "./dist/index.js",
+			"types": "./dist/index.d.ts"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "bun build src/cli.ts --target=bun --outfile=dist/cli.js && bun build src/index.ts --target=bun --outfile=dist/index.js",
+		"prepublishOnly": "bun run build",
+		"test": "bun test"
+	},
+	"keywords": [
+		"git-hooks",
+		"husky",
+		"lefthook",
+		"cli",
+		"developer-tools",
+		"git",
+		"commit-msg",
+		"pre-commit"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/moulibheemaneti/dart_husky"
+	},
+	"license": "MIT",
+	"devDependencies": {
+		"@types/bun": "latest"
+	},
+	"peerDependencies": {
+		"typescript": "^5"
+	}
+}
