@@ -1,5 +1,5 @@
 {
-	"name": "commitguard",
+	"name": "@moulibheemaneti/commitguard",
 	"version": "0.1.1",
 	"description": "A CLI tool to manage Git hooks (pre-commit, commit-msg, pre-push) in any Node.js / JS / TS project. Similar to husky and lefthook.",
 	"module": "./dist/index.js",
