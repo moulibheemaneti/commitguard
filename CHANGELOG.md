@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.3](https://github.com/moulibheemaneti/commitguard/compare/commitguard-v0.1.2...commitguard-v0.1.3) (2026-06-21)
+
+
+### Bug Fixes
+
+* correct repository url to commitguard ([5e57d3a](https://github.com/moulibheemaneti/commitguard/commit/5e57d3a41b0aec318409d3b9a172f0b2849a3675))
+
+
+### Miscellaneous
+
+* **main:** release commitguard 0.1.2 ([c74fa6a](https://github.com/moulibheemaneti/commitguard/commit/c74fa6a49e78c86c10de521ba841f7c06f96fb1e))
+* **main:** release commitguard 0.1.2 ([366400e](https://github.com/moulibheemaneti/commitguard/commit/366400e5d7a64b95aae7f8c0bd257dc3c5d55575))
+
 ## [0.1.2](https://github.com/moulibheemaneti/commitguard/compare/commitguard-v0.1.1...commitguard-v0.1.2) (2026-06-21)
 
 
