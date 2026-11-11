@@ -9,14 +9,14 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-      id-token: write  # required for npm provenance
+      id-token: write  # lets npm trusted publishing verify this workflow (and sign provenance)
     steps:
       - uses: actions/checkout@v4
 
       - name: Setup Bun
         uses: oven-sh/setup-bun@v2
 
-      # setup-node is required so npm can pick up NODE_AUTH_TOKEN for registry auth
+      # Trusted publishing needs npm 11.5.1 or newer; the current Node LTS ships with it.
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
@@ -29,9 +29,7 @@ jobs:
       - name: Build
         run: bun run build
 
+      # No token: npm trusts this workflow through trusted publishing, set up on npmjs.com under
+      # the package's Settings → Trusted publishing (GitHub Actions, moulibheemaneti/commitguard, publish.yml).
       - name: Publish to npm
         run: npm publish --provenance --access public
-        env:
-          # NPM_TOKEN: generate an Automation token at npmjs.com → Profile → Access Tokens,
-          # then add it as a repository secret at Settings → Secrets and variables → Actions.
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
