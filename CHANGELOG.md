@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.5](https://github.com/moulibheemaneti/commitguard/compare/commitguard-v0.1.4...commitguard-v0.1.5) (2026-11-11)
+
+
+### CI
+
+* publish to npm with trusted publishing instead of a token ([#7](https://github.com/moulibheemaneti/commitguard/issues/7)) ([c93c52c](https://github.com/moulibheemaneti/commitguard/commit/c93c52c8162df449c0ec8fb20413a1f9a8cbdaed))
+
 ## [0.1.4](https://github.com/moulibheemaneti/commitguard/compare/commitguard-v0.1.3...commitguard-v0.1.4) (2026-06-23)
 
 
